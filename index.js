@@ -1,12 +1,12 @@
 require('dotenv').config()
 const express = require('express')
-const cors = require('cors')
+
 const app = express()
 
 
-app.use(cors())
 
-app.get('/saugat', (req, res)=>{
+
+app.get('/api/saugat', (req, res)=>{
     res.json({
         'first_name': 'saugat',
         'last_name': 'poudel',
